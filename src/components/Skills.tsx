@@ -6,9 +6,11 @@ const skills = [
   'React',
   'Next.js',
   'Node.js',
+  'Express.js',
+  'MongoDB',
   'Tailwind CSS',
-  'CSS',
-  'HTML',
+  'REST APIs',
+  'Git & GitHub',
 ];
 
 const Skills: React.FC = () => {

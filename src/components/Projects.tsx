@@ -2,19 +2,19 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Project One',
-    description: 'Description of project one.',
-    link: 'https://github.com/user/project-one',
+    title: 'Portfolio Website',
+    description: 'A modern, responsive developer portfolio built with Next.js, React, TypeScript, and Tailwind CSS. Features dynamic components, smooth animations, and mobile-first design.',
+    link: 'https://github.com/rohit280101/portfolio-website',
   },
   {
-    title: 'Project Two',
-    description: 'Description of project two.',
-    link: 'https://github.com/user/project-two',
+    title: 'Task Management App',
+    description: 'Full-stack task management application with user authentication, real-time updates, and persistent storage. Built with React, Node.js, Express, and MongoDB.',
+    link: 'https://github.com/rohit280101/task-manager',
   },
   {
-    title: 'Project Three',
-    description: 'Description of project three.',
-    link: 'https://github.com/user/project-three',
+    title: 'Weather Dashboard',
+    description: 'Interactive weather dashboard displaying real-time weather data and forecasts. Integrated with OpenWeather API, featuring location search and responsive UI.',
+    link: 'https://github.com/rohit280101/weather-dashboard',
   },
 ];
 
