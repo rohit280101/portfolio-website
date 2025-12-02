@@ -1,4 +1,125 @@
 /* [project]/src/app/globals.css [app-client] (css) */
+html {
+  tab-size: 4;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+    transform: translateY(-25%);
+  }
+
+  50% {
+    animation-timing-function: cubic-bezier(0, 0, .2, 1);
+    transform: none;
+  }
+}
+
+.ring-inset, .focus-within\:ring-inset:focus-within, .focus\:ring-inset:focus {
+  --tw-ring-inset: inset;
+}
+
+.blur-0, .blur-none {
+  --tw-blur: blur(0);
+}
+
+.backdrop-blur-0, .backdrop-blur-none {
+  --tw-backdrop-blur: blur(0);
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+.glass {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background: #ffffff08;
+  border: 1px solid #ffffff0f;
+}
+
+.neon-text {
+  text-shadow: 0 0 8px #7c3aedcc, 0 0 16px #38bdf899;
+}
+
+.glow {
+  box-shadow: 0 8px 30px #7c3aed1f, inset 0 1px #ffffff05;
+}
+
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -9306,37 +9427,6 @@ img, video {
 
 .focus\:scale-y-150:focus {
   --tw-scale-y: 1.5;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes ping {
-  75%, 100% {
-    opacity: 0;
-    transform: scale(2);
-  }
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
-    transform: translateY(-25%);
-  }
-
-  50% {
-    animation-timing-function: cubic-bezier(0, 0, .2, 1);
-    transform: none;
-  }
 }
 
 .animate-none {
@@ -29281,6 +29371,48 @@ img, video {
 }
 
 @media (min-width: 640px) {
+  @media (min-width: 640px) {
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sm\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .sm\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .sm\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .sm\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .sm\:ring-inset, .sm\:focus-within\:ring-inset:focus-within, .sm\:focus\:ring-inset:focus {
+    --tw-ring-inset: inset;
+  }
+
+  .sm\:blur-0, .sm\:blur-none {
+    --tw-blur: blur(0);
+  }
+
+  .sm\:backdrop-blur-0, .sm\:backdrop-blur-none {
+    --tw-backdrop-blur: blur(0);
+  }
+
   .sm\:container {
     width: 100%;
   }
@@ -58290,6 +58422,48 @@ img, video {
 }
 
 @media (min-width: 768px) {
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .md\:ring-inset, .md\:focus-within\:ring-inset:focus-within, .md\:focus\:ring-inset:focus {
+    --tw-ring-inset: inset;
+  }
+
+  .md\:blur-0, .md\:blur-none {
+    --tw-blur: blur(0);
+  }
+
+  .md\:backdrop-blur-0, .md\:backdrop-blur-none {
+    --tw-backdrop-blur: blur(0);
+  }
+
   .md\:container {
     width: 100%;
   }
@@ -87299,6 +87473,48 @@ img, video {
 }
 
 @media (min-width: 1024px) {
+  @media (min-width: 640px) {
+    .lg\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lg\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .lg\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .lg\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .lg\:ring-inset, .lg\:focus-within\:ring-inset:focus-within, .lg\:focus\:ring-inset:focus {
+    --tw-ring-inset: inset;
+  }
+
+  .lg\:blur-0, .lg\:blur-none {
+    --tw-blur: blur(0);
+  }
+
+  .lg\:backdrop-blur-0, .lg\:backdrop-blur-none {
+    --tw-backdrop-blur: blur(0);
+  }
+
   .lg\:container {
     width: 100%;
   }
@@ -116308,6 +116524,48 @@ img, video {
 }
 
 @media (min-width: 1280px) {
+  @media (min-width: 640px) {
+    .xl\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .xl\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .xl\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .xl\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .xl\:ring-inset, .xl\:focus-within\:ring-inset:focus-within, .xl\:focus\:ring-inset:focus {
+    --tw-ring-inset: inset;
+  }
+
+  .xl\:blur-0, .xl\:blur-none {
+    --tw-blur: blur(0);
+  }
+
+  .xl\:backdrop-blur-0, .xl\:backdrop-blur-none {
+    --tw-backdrop-blur: blur(0);
+  }
+
   .xl\:container {
     width: 100%;
   }
@@ -145317,6 +145575,48 @@ img, video {
 }
 
 @media (min-width: 1536px) {
+  @media (min-width: 640px) {
+    .\32 xl\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .\32 xl\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .\32 xl\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .\32 xl\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .\32 xl\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .\32 xl\:ring-inset, .\32 xl\:focus-within\:ring-inset:focus-within, .\32 xl\:focus\:ring-inset:focus {
+    --tw-ring-inset: inset;
+  }
+
+  .\32 xl\:blur-0, .\32 xl\:blur-none {
+    --tw-blur: blur(0);
+  }
+
+  .\32 xl\:backdrop-blur-0, .\32 xl\:backdrop-blur-none {
+    --tw-backdrop-blur: blur(0);
+  }
+
   .\32 xl\:container {
     width: 100%;
   }
