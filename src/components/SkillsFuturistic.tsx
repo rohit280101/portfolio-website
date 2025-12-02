@@ -3,11 +3,11 @@ import React from 'react'
 import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } from 'recharts'
 
 const data = [
-  { subject: 'JavaScript', A: 95 },
-  { subject: 'TypeScript', A: 90 },
-  { subject: 'React', A: 92 },
-  { subject: 'Next.js', A: 88 },
-  { subject: 'Node.js', A: 85 },
+  { subject: 'Python', A: 95 },
+  { subject: 'C++', A: 85 },
+  { subject: 'Django', A: 88 },
+  { subject: 'Flask', A: 85 },
+  { subject: 'SQL', A: 90 },
 ]
 
 export default function SkillsFuturistic() {

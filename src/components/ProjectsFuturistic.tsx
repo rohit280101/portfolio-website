@@ -4,18 +4,25 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-    title: 'Portfolio Website',
+    title: 'Personality Prediction',
     description:
-      'A modern, responsive developer portfolio built with Next.js, React, TypeScript, and Tailwind CSS.',
-    link: 'https://github.com/rohit280101/portfolio-website',
-    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
+      'Machine learning model that predicts user personality based on social media activity and behavioral patterns using NLP.',
+    link: 'https://github.com/rohit280101',
+    tech: ['Python', 'Flask', 'TFIDF', 'ML'],
   },
   {
-    title: 'Task Manager',
+    title: 'Stock Updater',
     description:
-      'Full-stack task management app with authentication and real-time updates.',
-    link: 'https://github.com/rohit280101/task-manager',
-    tech: ['Node.js', 'Express', 'MongoDB'],
+      'Automated service that sends daily stock market updates and trading alerts via SMS and email.',
+    link: 'https://github.com/rohit280101',
+    tech: ['Python', 'API', 'SMTP', 'Automation'],
+  },
+  {
+    title: 'Automated Birthday Wisher',
+    description:
+      'Application that automatically sends personalized birthday wishes from a database using scheduled jobs.',
+    link: 'https://github.com/rohit280101',
+    tech: ['Python', 'Pandas', 'SMTPLIB', 'DB'],
   },
 ]
 

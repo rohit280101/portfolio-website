@@ -31,16 +31,37 @@ export default function HeroFuturistic() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          Full-Stack Developer • React Specialist • Open Source Enthusiast
+          Master's Student in AI • Software Developer • Berlin, Germany
+        </motion.p>
+        <motion.p
+          className="mt-3 text-lg text-slate-300 max-w-2xl mx-auto"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          Building intelligent software solutions with Python, C++, Django & modern web technologies
         </motion.p>
 
-        <div className="mt-8 flex items-center justify-center gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <NeonButton onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
             View Projects
           </NeonButton>
           <NeonButton as={"a" as any} href="/resume.pdf" target="_blank">
             Download Resume
           </NeonButton>
+        </div>
+        <div className="mt-8 flex justify-center gap-6 text-slate-400 text-sm">
+          <a href="mailto:rohitkumargupta2801work@gmail.com" className="hover:text-cyan-400 transition">
+            Email
+          </a>
+          <span>•</span>
+          <a href="https://github.com/rohit280101" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">
+            GitHub
+          </a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/rohit-gupta554836256" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition">
+            LinkedIn
+          </a>
         </div>
       </motion.div>
 
