@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/rohitgupta/MY-PORTFOLIO-R/portfolio-website/src/components/Hero.tsx"],"sourcesContent":["import React from 'react';\n\nconst Hero: React.FC = () => {\n    return (\n        <section className=\"flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center\">\n            <h1 className=\"text-5xl font-bold mb-4\">Rohit Kumar Gupta</h1>\n            <p className=\"text-xl mb-8\">Your Tagline or Brief Description</p>\n            <a href=\"#projects\" className=\"px-6 py-3 bg-white text-blue-500 rounded-full font-semibold hover:bg-gray-200 transition\">\n                View My Work\n            </a>\n        </section>\n    );\n};\n\nexport default Hero;"],"names":[],"mappings":";;;;;;AAEA,MAAM,OAAiB;IACnB,qBACI,8OAAC;QAAQ,WAAU;;0BACf,8OAAC;gBAAG,WAAU;0BAA0B;;;;;;0BACxC,8OAAC;gBAAE,WAAU;0BAAe;;;;;;0BAC5B,8OAAC;gBAAE,MAAK;gBAAY,WAAU;0BAA2F;;;;;;;;;;;;AAKrI;uCAEe"}},
+    {"offset": {"line": 61, "column": 0}, "map": {"version":3,"sources":["file:///Users/rohitgupta/MY-PORTFOLIO-R/portfolio-website/src/app/page.tsx"],"sourcesContent":["import Hero from '../components/Hero';\n\nconst HomePage = () => {\n    return (\n        <main>\n            <Hero />\n        </main>\n    );\n};\n\nexport default HomePage;"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,WAAW;IACb,qBACI,8OAAC;kBACG,cAAA,8OAAC,qIAAI;;;;;;;;;;AAGjB;uCAEe"}}]
+}
