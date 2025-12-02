@@ -3,8 +3,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './globals.css';
 
-import 'regenerator-runtime/runtime';
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
