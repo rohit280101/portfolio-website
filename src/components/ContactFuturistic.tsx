@@ -1,122 +1,109 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
 export default function ContactFuturistic() {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const contactCards = [
+    {
+      icon: '📧',
+      title: 'Email',
+      value: 'rohitkumargupta2801work@gmail.com',
+      link: 'mailto:rohitkumargupta2801work@gmail.com',
+      color: 'from-cyan-500 to-blue-500',
+    },
+    {
+      icon: '🐙',
+      title: 'GitHub',
+      value: 'rohit280101',
+      link: 'https://github.com/rohit280101',
+      color: 'from-purple-500 to-pink-500',
+    },
+    {
+      icon: '💼',
+      title: 'LinkedIn',
+      value: 'rohit-gupta',
+      link: 'https://www.linkedin.com/in/rohit-gupta-554836256',
+      color: 'from-blue-500 to-cyan-500',
+    },
+  ]
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setStatus('sending')
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
+      },
+    },
+  }
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message }),
-      })
-
-      if (response.ok) {
-        setStatus('success')
-        setName('')
-        setEmail('')
-        setMessage('')
-        setTimeout(() => setStatus('idle'), 3000)
-      } else {
-        setStatus('error')
-        setTimeout(() => setStatus('idle'), 3000)
-      }
-    } catch (error) {
-      setStatus('error')
-      setTimeout(() => setStatus('idle'), 3000)
-    }
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6 },
+    },
   }
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent">
-      <div className="container mx-auto max-w-4xl">
-        <motion.h2
+    <section id="contact" className="min-h-screen w-full flex items-center justify-center py-20 px-6 bg-gradient-to-b from-transparent via-purple-900/5 to-transparent">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold mb-6 text-center neon-text"
+          viewport={{ once: true }}
         >
-          Get In Touch
-        </motion.h2>
-        <motion.p
-          className="mt-4 text-lg text-slate-300 max-w-xl mx-auto text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          Let's collaborate on interesting projects. Reach out via email or connect on LinkedIn/GitHub.
-        </motion.p>
-        <motion.div
-          className="mt-6 flex justify-center gap-6 text-slate-300 flex-wrap"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          <a href="mailto:rohitkumargupta2801work@gmail.com" className="hover:text-cyan-400 transition flex items-center gap-2">
-            <span>📧</span> rohitkumargupta2801work@gmail.com
-          </a>
-          <a href="tel:+491763150969" className="hover:text-cyan-400 transition flex items-center gap-2">
-            <span>📱</span> +49 176 31509698
-          </a>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Get in Touch</h2>
+            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              Interested in working together? Let's connect and discuss how we can collaborate.
+            </p>
+          </div>
         </motion.div>
 
+        {/* Contact Cards */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mt-12 glass rounded-2xl p-8 md:p-12 backdrop-blur-md border border-white/10 max-w-2xl mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
-          <p className="text-slate-300 text-center mb-8">Based in Berlin, Germany 🇩🇪</p>
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label className="block text-sm text-slate-300 mb-2">Name</label>
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400/50 transition"
-                placeholder="Your name"
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-slate-300 mb-2">Email</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400/50 transition"
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm text-slate-300 mb-2">Message</label>
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                rows={5}
-                className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-slate-400 focus:outline-none focus:border-cyan-400/50 transition resize-none"
-                placeholder="Your message..."
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              disabled={status === 'sending'}
-              className="w-full px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition disabled:opacity-50"
-            >
-              {status === 'success' ? '✓ Message Sent! I\'ll get back to you soon.' : status === 'error' ? '✗ Error. Please try again.' : status === 'sending' ? 'Sending...' : 'Send Message'}
-            </button>
-          </form>
+          <div className="grid md:grid-cols-3 gap-8">
+            {contactCards.map((card, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+              >
+                <a
+                  href={card.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group h-full block"
+                >
+                  <div className={`bg-gradient-to-br ${card.color} p-[1px] rounded-2xl h-full`}>
+                    <div className="bg-slate-900/80 rounded-2xl p-8 h-full backdrop-blur-sm flex flex-col items-center justify-center hover:bg-slate-800/80 transition-colors">
+                      {/* Icon */}
+                      <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                        {card.icon}
+                      </div>
+                      {/* Title */}
+                      <h3 className={`text-2xl font-bold mb-3 bg-gradient-to-r ${card.color} bg-clip-text text-transparent`}>
+                        {card.title}
+                      </h3>
+                      {/* Value */}
+                      <p className="text-gray-300 text-center text-sm break-all hover:text-gray-200 transition-colors">
+                        {card.value}
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

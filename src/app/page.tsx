@@ -9,12 +9,10 @@ export default function Page() {
   return (
     <main className="min-h-screen text-white">
       <HeroFuturistic />
-      <div className="container mx-auto px-6">
-        <ProjectsFuturistic />
-        <SkillsFuturistic />
-        <AboutFuturistic />
-        <ContactFuturistic />
-      </div>
+      <AboutFuturistic />
+      <ProjectsFuturistic />
+      <SkillsFuturistic />
+      <ContactFuturistic />
     </main>
   )
 }
