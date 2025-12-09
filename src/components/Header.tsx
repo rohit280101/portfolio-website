@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const Header: React.FC = () => {
@@ -133,14 +134,14 @@ const Header: React.FC = () => {
                         </button>
                     </li>
                     <li>
-                        <a
+                        <Link
                             href="/resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 text-cyan-300 hover:border-cyan-400/60 hover:text-cyan-200 transition-all"
                         >
                             Resume
-                        </a>
+                        </Link>
                     </li>
                 </ul>
 
@@ -189,14 +190,14 @@ const Header: React.FC = () => {
                                 </button>
                             </li>
                             <li>
-                                <a
+                                <Link
                                     href="/resume.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 text-cyan-300 hover:border-cyan-400/60 hover:text-cyan-200 transition-all block text-center"
                                 >
                                     Resume
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
