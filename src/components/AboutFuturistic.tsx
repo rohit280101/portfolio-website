@@ -77,101 +77,108 @@ export default function AboutFuturistic() {
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-4xl md:text-5xl font-bold mb-16 text-center">
-          <motion.h2
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-white"
           >
-            About Me
-          </motion.h2>
+            <h2 className="text-white text-4xl md:text-5xl font-bold">
+              About Me
+            </h2>
+          </motion.div>
         </div>
 
         {/* Work Experience */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h3 className="text-3xl font-bold text-cyan-300 mb-8">Professional Experience</h3>
+        <div className="mb-16">
           <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6"
           >
-            {workExperience.map((job, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="rounded-xl bg-slate-900/40 backdrop-blur-md border border-white/10 hover:border-cyan-400/30 p-6 md:p-8 transition-all duration-300"
-              >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-white mb-1">{job.title}</h4>
-                    <p className="text-cyan-300 font-semibold">
-                      {job.company} • {job.location}
-                    </p>
-                  </div>
-                  <span className="text-gray-400 text-sm md:text-base mt-2 md:mt-0 inline-block px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full">
-                    {job.period}
-                  </span>
-                </div>
-                <ul className="text-gray-300 space-y-2 text-sm md:text-base">
-                  {job.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <span className="text-cyan-400 mr-3 mt-1 flex-shrink-0">▸</span>
-                      <span>{highlight}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
+            <h3 className="text-3xl font-bold text-cyan-300 mb-8">Professional Experience</h3>
           </motion.div>
-        </motion.div>
+          <div className="space-y-6">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              {workExperience.map((job, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                >
+                  <div className="rounded-xl bg-slate-900/40 backdrop-blur-md border border-white/10 hover:border-cyan-400/30 p-6 md:p-8 transition-all duration-300">
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+                      <div>
+                        <h4 className="text-xl md:text-2xl font-bold text-white mb-1">{job.title}</h4>
+                        <p className="text-cyan-300 font-semibold">
+                          {job.company} • {job.location}
+                        </p>
+                      </div>
+                      <span className="text-gray-400 text-sm md:text-base mt-2 md:mt-0 inline-block px-3 py-1 bg-cyan-500/10 border border-cyan-500/30 rounded-full">
+                        {job.period}
+                      </span>
+                    </div>
+                    <ul className="text-gray-300 space-y-2 text-sm md:text-base">
+                      {job.highlights.map((highlight, idx) => (
+                        <li key={idx} className="flex items-start">
+                          <span className="text-cyan-400 mr-3 mt-1 flex-shrink-0">▸</span>
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
 
         {/* Education */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <h3 className="text-3xl font-bold text-cyan-300 mb-8">Education</h3>
+        <div className="mb-16">
           <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-6"
           >
-            {education.map((edu, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="rounded-xl bg-gradient-to-br from-purple-500/10 to-blue-500/10 backdrop-blur-md border border-purple-400/30 p-6 md:p-8 hover:border-purple-400/50 transition-all duration-300"
-              >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-white mb-1">{edu.degree}</h4>
-                    <p className="text-purple-300 font-semibold">
-                      {edu.institution} • {edu.location}
-                    </p>
-                  </div>
-                  <span className="text-gray-400 text-sm md:text-base mt-2 md:mt-0 inline-block px-3 py-1 bg-purple-500/10 border border-purple-500/30 rounded-full">
-                    {edu.period}
-                  </span>
-                </div>
-                <p className="text-gray-300 text-sm md:text-base">{edu.description}</p>
-              </motion.div>
-            ))}
+            <h3 className="text-3xl font-bold text-cyan-300 mb-8">Education</h3>
           </motion.div>
-        </motion.div>
+          <div className="space-y-6">
+            <motion.div
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              {education.map((edu, index) => (
+                <motion.div
+                  key={index}
+                  variants={itemVariants}
+                >
+                  <div className="rounded-xl bg-gradient-to-br from-purple-500/10 to-blue-500/10 backdrop-blur-md border border-purple-400/30 p-6 md:p-8 hover:border-purple-400/50 transition-all duration-300">
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+                      <div>
+                        <h4 className="text-xl md:text-2xl font-bold text-white mb-1">{edu.degree}</h4>
+                        <p className="text-purple-300 font-semibold">
+                          {edu.institution} • {edu.location}
+                        </p>
+                      </div>
+                      <span className="text-gray-400 text-sm md:text-base mt-2 md:mt-0 inline-block px-3 py-1 bg-purple-500/10 border border-purple-500/30 rounded-full">
+                        {edu.period}
+                      </span>
+                    </div>
+                    <p className="text-gray-300 text-sm md:text-base">{edu.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
 
         {/* Summary */}
         <motion.div
@@ -179,12 +186,13 @@ export default function AboutFuturistic() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-center"
         >
-          <div className="inline-block px-8 py-6 rounded-xl bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-400/50">
-            <p className="text-gray-300 text-lg md:text-xl">
-              <span className="text-cyan-300 font-bold">3+ years</span> of hands-on software development experience with proven expertise in building scalable applications, optimizing processes, and delivering client-focused solutions.
-            </p>
+          <div className="text-center">
+            <div className="inline-block px-8 py-6 rounded-xl bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-400/50">
+              <p className="text-gray-300 text-lg md:text-xl">
+                <span className="text-cyan-300 font-bold">3+ years</span> of hands-on software development experience with proven expertise in building scalable applications, optimizing processes, and delivering client-focused solutions.
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>

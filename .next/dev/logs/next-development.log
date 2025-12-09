@@ -1,2 +1,217 @@
-[00:00:00.269] Server  WARN     ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 4.9.5
-[00:00:00.303] Server  LOG      ✓ Ready in 206ms
+[00:00:00.481] Server  WARN     ⚠ Minimum recommended TypeScript version is v5.1.0, older versions can potentially be incompatible with Next.js. Detected: 4.9.5
+[00:00:00.491] Server  ERROR    ⨯ API Routes cannot be used with "output: export". See more info here: https://nextjs.org/docs/advanced-features/static-html-export
+[00:00:00.544] Server  LOG      ✓ Ready in 331ms
+[00:00:22.554] Server  LOG      ✓ Compiled in 14ms
+[00:00:46.460] Server  LOG      ✓ Compiled in 12ms
+[00:01:19.861] Server  LOG      ✓ Compiled in 15ms
+[00:01:20.651] Browser ERROR   ./src/components/AboutFuturistic.tsx:137:22
+Parsing ecmascript source code failed
+  135 |             ))}
+  136 |           </motion.div>
+> 137 |         </motion.div>
+      |                      ^
+> 138 |
+      | ^
+> 139 |         {/* Education */}
+      | ^^^^^^^^^
+  140 |         <motion.div
+  141 |           initial={{ opacity: 0 }}
+  142 |           whileInView={{ opacity: 1 }}
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:01:24.651] Browser ERROR   ./src/components/AboutFuturistic.tsx:137:22
+Parsing ecmascript source code failed
+  135 |             ))}
+  136 |           </motion.div>
+> 137 |         </motion.div>
+      |                      ^
+> 138 |
+      | ^
+> 139 |         {/* Education */}
+      | ^^^^^^^^^
+  140 |         <motion.div
+  141 |           initial={{ opacity: 0 }}
+  142 |           whileInView={{ opacity: 1 }}
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:01:26.650] Browser ERROR   ./src/components/AboutFuturistic.tsx:170:22
+Parsing ecmascript source code failed
+  168 |             ))}
+  169 |           </motion.div>
+> 170 |         </motion.div>
+      |                      ^
+> 171 |
+      | ^
+> 172 |         {/* Summary */}
+      | ^^^^^^^^^
+  173 |         <motion.div
+  174 |           initial={{ opacity: 0, y: 20 }}
+  175 |           whileInView={{ opacity: 1, y: 0 }}
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:01:27.651] Browser ERROR   ./src/components/AboutFuturistic.tsx:170:22
+Parsing ecmascript source code failed
+  168 |             ))}
+  169 |           </motion.div>
+> 170 |         </motion.div>
+      |                      ^
+> 171 |
+      | ^
+> 172 |         {/* Summary */}
+      | ^^^^^^^^^
+  173 |         <motion.div
+  174 |           initial={{ opacity: 0, y: 20 }}
+  175 |           whileInView={{ opacity: 1, y: 0 }}
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:01:33.651] Browser ERROR   ./src/components/AboutFuturistic.tsx:177:22
+Parsing ecmascript source code failed
+  175 |             ))}
+  176 |           </motion.div>
+> 177 |         </motion.div>
+      |                      ^
+> 178 |
+      | ^
+> 179 |         {/* Summary */}
+      | ^^^^^^^^^
+  180 |         <motion.div
+  181 |           initial={{ opacity: 0, y: 20 }}
+  182 |           whileInView={{ opacity: 1, y: 0 }}
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:01:35.651] Browser ERROR   ./src/components/AboutFuturistic.tsx:177:22
+Parsing ecmascript source code failed
+  175 |             ))}
+  176 |           </motion.div>
+> 177 |         </motion.div>
+      |                      ^
+> 178 |
+      | ^
+> 179 |         {/* Summary */}
+      | ^^^^^^^^^
+  180 |         <motion.div
+  181 |           initial={{ opacity: 0, y: 20 }}
+  182 |           whileInView={{ opacity: 1, y: 0 }}
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:01:57.754] Server  LOG      ✓ Compiled in 10ms
+[00:01:58.651] Browser ERROR   ./src/components/AboutFuturistic.tsx:136:24
+Parsing ecmascript source code failed
+  134 |               </motion.div>
+  135 |             ))}
+> 136 |           </motion.div>
+      |                        ^
+> 137 |         </div>
+      | ^^^^^^^^^
+  138 |
+  139 |         {/* Education */}
+  140 |         <div className="mb-16">
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:02:01.650] Browser ERROR   ./src/components/AboutFuturistic.tsx:136:24
+Parsing ecmascript source code failed
+  134 |               </motion.div>
+  135 |             ))}
+> 136 |           </motion.div>
+      |                        ^
+> 137 |         </div>
+      | ^^^^^^^^^
+  138 |
+  139 |         {/* Education */}
+  140 |         <div className="mb-16">
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:02:10.061] Server  LOG      ✓ Compiled in 9ms
+[00:02:10.650] Browser ERROR   ./src/components/AboutFuturistic.tsx:177:24
+Parsing ecmascript source code failed
+  175 |               </motion.div>
+  176 |             ))}
+> 177 |           </motion.div>
+      |                        ^
+> 178 |         </div>
+      | ^^^^^^^^^
+  179 |
+  180 |         {/* Summary */}
+  181 |         <motion.div
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:02:12.651] Browser ERROR   ./src/components/AboutFuturistic.tsx:177:24
+Parsing ecmascript source code failed
+  175 |               </motion.div>
+  176 |             ))}
+> 177 |           </motion.div>
+      |                        ^
+> 178 |         </div>
+      | ^^^^^^^^^
+  179 |
+  180 |         {/* Summary */}
+  181 |         <motion.div
+
+Expected '</', got 'jsx text (
+        )'
+
+Import trace:
+  Server Component:
+    ./src/components/AboutFuturistic.tsx
+    ./src/app/page.tsx
+[00:03:00.184] Server  LOG      ✓ Compiled in 18ms
