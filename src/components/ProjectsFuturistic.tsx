@@ -6,30 +6,30 @@ const projects = [
   {
     title: 'Intelligent Document Classifier',
     description:
-      'A system that reads PDFs and images (invoices, receipts, reports) and classifies them using OCR and machine learning with TF-IDF/BERT embeddings and SVM models.',
+      'Built an end-to-end classifier for PDFs and scanned documents using Python, OCR (Tesseract/PaddleOCR), TF-IDF, and BERT embeddings; achieved 95% text extraction accuracy and improved F1-score by 18%, deployed via REST APIs for real-time inference.',
     link: 'https://github.com/rohit280101',
-    tech: ['Python', 'OCR', 'BERT', 'SVM', 'Pipeline'],
+    tech: ['Python', 'OCR', 'BERT', 'TF-IDF', 'REST API'],
   },
   {
     title: 'Smart Resume Screener',
     description:
-      'A model that reads resumes and matches them to job descriptions using embeddings and similarity search, with candidate ranking and score explanations.',
+      'Developed an NLP-based resume-job matching system using Sentence-BERT embeddings and FAISS indexing; implemented semantic similarity scoring, candidate ranking, and skill-gap analysis, reducing manual screening effort by 60%.',
     link: 'https://github.com/rohit280101',
-    tech: ['Python', 'FAISS', 'Embeddings', 'LLM'],
+    tech: ['NLP', 'Sentence-BERT', 'FAISS', 'Embeddings', 'Python'],
   },
   {
-    title: 'Email Spam Filter',
+    title: 'Email Spam & Phishing Detector',
     description:
-      'A spam classifier trained from scratch using Naive Bayes, SVM, and BERT with hyperparameter tuning and phishing detection capabilities.',
+      'Designed ML pipelines using Naive Bayes, SVM, and fine-tuned BERT/HuggingFace models; combined heuristic rules with model predictions, improving detection accuracy and minimizing false negatives.',
     link: 'https://github.com/rohit280101',
-    tech: ['Python', 'NLP', 'Naive Bayes', 'BERT'],
+    tech: ['Python', 'NLP', 'Naive Bayes', 'SVM', 'BERT'],
   },
   {
-    title: 'DataCore',
+    title: 'DataCore - Full-Stack Data Platform',
     description:
-      'Full-stack enterprise data management and analytics platform enabling organizations to connect, transform, analyze, and visualize data from multiple sources with a unified interface for collaboration.',
+      'Constructed a Python/Flask/React platform for data ingestion, ETL pipelines, and real-time dashboards; streamlined reports and implemented collaborative workspaces, reducing manual reporting effort by 40%.',
     link: 'https://github.com/rohit280101',
-    tech: ['Python', 'Flask', 'React', 'TypeScript'],
+    tech: ['Python', 'Flask', 'React', 'ETL', 'Analytics'],
   },
 ]
 

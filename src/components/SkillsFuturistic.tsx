@@ -3,18 +3,19 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const technicalSkills = {
-  'Programming Languages': ['Python', 'C++', 'Java', 'JavaScript'],
-  'Web Frameworks': ['Django', 'Flask', 'RESTful APIs'],
-  'Data & Databases': ['Pandas', 'NumPy', 'PostgreSQL', 'MySQL', 'SQLite', 'Data Pipelines'],
-  'Tools & Technologies': ['Git', 'Linux', 'Visual Studio', 'System Architecture', 'ETL'],
-  'Other Skills': ['HTML', 'CSS', 'Data Structures', 'Algorithms', 'Client Communication', 'Process Documentation'],
+  'Programming': ['Python', 'C++', 'Java', 'SQL'],
+  'Data & Analytics': ['Pandas', 'NumPy', 'ETL/ELT', 'Data Pipelines', 'Visualization', 'Data Processing'],
+  'Machine Learning': ['scikit-learn', 'TensorFlow', 'PyTorch', 'HuggingFace', 'NLP', 'TF-IDF', 'BERT', 'Model Evaluation'],
+  'Frameworks & Tools': ['Django', 'Flask', 'FastAPI', 'Git', 'Linux', 'Docker', 'CI/CD'],
+  'Databases': ['MySQL', 'PostgreSQL', 'SQLite', 'SQLAlchemy'],
+  'Concepts': ['Software Lifecycle', 'System Architecture', 'Process Optimization', 'Automation', 'Microservices', 'Agile', 'TDD'],
 }
 
 const certifications = [
-  'The C++ 20 Masterclass Advanced (Udemy)',
-  'The Complete Data Structures and Algorithms (Udemy)',
-  '100 Days of Code: The Complete Python Pro Bootcamp (Udemy)',
-  'Data Analysis with R Programming (Coursera)',
+  'AWS Certified Solutions Architect – Associate (2025)',
+  'AWS Certified Machine Learning – Specialty (In Progress)',
+  'Natural Language Processing Specialization – DeepLearning.AI',
+  'Data Analysis with R Programming – Coursera',
 ]
 
 export default function SkillsFuturistic() {
@@ -48,11 +49,12 @@ export default function SkillsFuturistic() {
   }
 
   const colors = {
-    'Programming Languages': 'from-blue-500 to-cyan-500',
-    'Web Frameworks': 'from-green-500 to-emerald-500',
-    'Data & Databases': 'from-purple-500 to-pink-500',
-    'Tools & Technologies': 'from-orange-500 to-red-500',
-    'Other Skills': 'from-indigo-500 to-blue-500',
+    'Programming': 'from-blue-500 to-cyan-500',
+    'Data & Analytics': 'from-purple-500 to-pink-500',
+    'Machine Learning': 'from-green-500 to-emerald-500',
+    'Frameworks & Tools': 'from-orange-500 to-red-500',
+    'Databases': 'from-indigo-500 to-blue-500',
+    'Concepts': 'from-yellow-500 to-orange-500',
   }
 
   return (
