@@ -59,7 +59,7 @@ export default function HeroFuturistic() {
             transition={{ delay: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-300 mb-8">
-              Full Stack Developer | AI/ML Engineer
+              Backend Developer | AI/ML Engineer
             </h2>
           </motion.div>
 
@@ -69,13 +69,7 @@ export default function HeroFuturistic() {
             transition={{ delay: 0.6 }}
           >
             <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
-              Master's student in Artificial Intelligence at IU Berlin with 3+ years of software development
-experience across enterprise IT systems, data solutions, and client-facing projects. Proven expertise in
-developing scalable applications, optimizing IT processes, and implementing data-driven strategies
-that improved operational efficiency by 30% and reduced technical debt by 25%. Experienced in full-
-cycle project management, from requirements analysis to deployment and stakeholder presentations.
-Seeking to leverage technical expertise and strategic mindset in consulting roles focused on AI, data
-strategy, and IT transformation.
+              Master's student in Artificial Intelligence at IU Berlin with 3+ years of backend software development experience building scalable APIs, data pipelines, and production ML systems. Proven expertise in designing robust backend architectures, implementing MLOps workflows, and delivering data-driven solutions that improved operational efficiency by 30% and reduced technical debt by 25%. Passionate about engineering reliable backend infrastructure that powers intelligent, data-first applications.
             </p>
           </motion.div>
 

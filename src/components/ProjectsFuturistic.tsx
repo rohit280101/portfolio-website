@@ -4,32 +4,32 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-    title: 'Intelligent Document Classifier',
+    title: 'Customer Segmentation & Retention Analysis',
     description:
-      'Built an end-to-end classifier for PDFs and scanned documents using Python, OCR (Tesseract/PaddleOCR), TF-IDF, and BERT embeddings; achieved 95% text extraction accuracy and improved F1-score by 18%, deployed via REST APIs for real-time inference.',
-    link: 'https://github.com/rohit280101',
-    tech: ['Python', 'OCR', 'BERT', 'TF-IDF', 'REST API'],
+      'Production-grade pipeline for RFM segmentation, churn prediction (LightGBM/XGBoost + SHAP), customer lifetime value (BG/NBD + Gamma-Gamma), survival analysis, and cohort retention — with a Streamlit dashboard, MLflow tracking, and automated early-warning risk scoring.',
+    link: 'https://github.com/rohit280101/Customer-Segmentation---Retention-Analysis',
+    tech: ['Python', 'LightGBM', 'XGBoost', 'MLflow', 'Streamlit', 'DVC'],
   },
   {
-    title: 'Smart Resume Screener',
+    title: 'Experimentation & Uplift Modeling Toolkit',
     description:
-      'Developed an NLP-based resume-job matching system using Sentence-BERT embeddings and FAISS indexing; implemented semantic similarity scoring, candidate ranking, and skill-gap analysis, reducing manual screening effort by 60%.',
-    link: 'https://github.com/rohit280101',
-    tech: ['NLP', 'Sentence-BERT', 'FAISS', 'Embeddings', 'Python'],
+      'End-to-end A/B experimentation and causal inference framework — covering power analysis, statistical testing (frequentist, Bayesian, SPRT), uplift modeling (S/T/X/R-Learners, CausalForest), propensity score matching, and automated experiment summary reports.',
+    link: 'https://github.com/rohit280101/uplift-experimentation-toolkit',
+    tech: ['Python', 'Causal Inference', 'A/B Testing', 'MLflow', 'Uplift Modeling'],
   },
   {
-    title: 'Email Spam & Phishing Detector',
+    title: 'NLP Insights from Unstructured Data',
     description:
-      'Designed ML pipelines using Naive Bayes, SVM, and fine-tuned BERT/HuggingFace models; combined heuristic rules with model predictions, improving detection accuracy and minimizing false negatives.',
-    link: 'https://github.com/rohit280101',
-    tech: ['Python', 'NLP', 'Naive Bayes', 'SVM', 'BERT'],
+      'Production-ready NLP framework for extracting insights from unstructured text — covering sentiment analysis, topic modeling (LDA/BERTopic), NER, summarization (BART/T5), RAG-based QA, and LLM-generated narratives, with a Streamlit dashboard and MLflow tracking.',
+    link: 'https://github.com/rohit280101/nlp-insights-unstructured-data',
+    tech: ['Python', 'BERT', 'BERTopic', 'spaCy', 'FAISS', 'LLMs'],
   },
   {
-    title: 'DataCore - Full-Stack Data Platform',
+    title: 'End-to-End ML System',
     description:
-      'Constructed a Python/Flask/React platform for data ingestion, ETL pipelines, and real-time dashboards; streamlined reports and implemented collaborative workspaces, reducing manual reporting effort by 40%.',
-    link: 'https://github.com/rohit280101',
-    tech: ['Python', 'Flask', 'React', 'ETL', 'Analytics'],
+      'Production-ready MLOps system covering the full lifecycle: data ingestion, feature engineering, training, evaluation, model registry, serving (FastAPI/gRPC), monitoring (Evidently, Prometheus), and auto-retraining — orchestrated with MLflow, DVC, Docker, and Kubernetes.',
+    link: 'https://github.com/rohit280101/end-to-end-ml-system',
+    tech: ['MLflow', 'FastAPI', 'gRPC', 'Docker', 'Kubernetes', 'DVC'],
   },
 ]
 
