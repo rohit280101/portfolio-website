@@ -9,6 +9,7 @@ const technicalSkills = {
   'Frameworks & Tools': ['Django', 'Flask', 'FastAPI', 'Git', 'Linux', 'Docker', 'CI/CD'],
   'Databases': ['MySQL', 'PostgreSQL', 'SQLite', 'SQLAlchemy'],
   'Concepts': ['Software Lifecycle', 'System Architecture', 'Process Optimization', 'Automation', 'Microservices', 'Agile', 'TDD'],
+  'Languages': ['English (Fluent)', 'German (A2)'],
 }
 
 const certifications = [
@@ -55,6 +56,7 @@ export default function SkillsFuturistic() {
     'Frameworks & Tools': 'from-orange-500 to-red-500',
     'Databases': 'from-indigo-500 to-blue-500',
     'Concepts': 'from-yellow-500 to-orange-500',
+    'Languages': 'from-teal-500 to-cyan-400',
   }
 
   return (

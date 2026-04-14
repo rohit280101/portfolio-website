@@ -58,9 +58,22 @@ export default function HeroFuturistic() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-300 mb-8">
-              Backend Developer | AI/ML Engineer
+            <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-300 mb-4">
+              AI/ML Engineering Student | Backend Python Developer | Available as Werkstudent
             </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.55 }}
+          >
+            <div className="flex items-center justify-center mb-8">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/15 border border-cyan-400/40 text-cyan-300 text-sm font-medium">
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                Available 20hrs/week · Werkstudent · Berlin
+              </span>
+            </div>
           </motion.div>
 
           <motion.div

@@ -11,10 +11,10 @@ export default function AboutFuturistic() {
       period: 'Jan 2024 – Dec 2024',
       highlights: [
         'Constructed custom software solutions for 10+ clients using Python (Django, Flask, FastAPI), ORM, middleware, and JWT authentication, ensuring secure and maintainable applications.',
-        'Orchestrated RESTful API development with JSON/WebSocket, integrated PostgreSQL/MySQL databases, and enhanced performance, reducing processing time by 30%.',
+        'Built RESTful API development with JSON/WebSocket, integrated PostgreSQL/MySQL databases, and enhanced performance, reducing processing time by 30%.',
         'Developed ETL/data pipelines using Pandas, NumPy, and SQLAlchemy, optimizing batch and real-time processing for large datasets.',
         'Applied unit testing (PyTest) and Test-Driven Development (TDD) practices, along with CI/CD pipelines (GitHub Actions), reducing post-deployment defects by 25%.',
-        'Coordinated microservices architecture, Docker containers, and REST/GraphQL endpoints to deliver high-quality solutions under tight deadlines.',
+        'Implemented microservices architecture, Docker containers, and REST/GraphQL endpoints to deliver high-quality solutions under tight deadlines.',
       ],
     },
     {
@@ -25,7 +25,7 @@ export default function AboutFuturistic() {
       highlights: [
         'Designed a calibrator application for control and monitoring modules, improving calibration efficiency by 40% with real-time sensor data acquisition.',
         'Architected the UI using MFC (C++), incorporating multithreading, event-driven architecture, and custom controls for 15+ modules.',
-        'Directed the project for 7 months, demonstrating the system in Ireland, enabling adoption across 3 manufacturing units.',
+        'Led the project for 7 months, demonstrating the system in Ireland, enabling adoption across 3 manufacturing units.',
         'Packaged applications with Visual Studio Installer Projects, integrating dependency management and build scripts, reducing deployment errors by 30%.',
         'Integrated serial communication (RS232/Modbus), error handling, and data logging for reliable hardware interaction.',
       ],
@@ -90,6 +90,19 @@ export default function AboutFuturistic() {
             </h2>
           </motion.div>
         </div>
+
+        {/* Intro */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="mb-12 text-center"
+        >
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Currently pursuing an MSc in AI at IU Berlin and available 20 hours per week as a Werkstudent. With 3+ years of backend development experience, I am eager to contribute to a Berlin-based team while continuing my studies.
+          </p>
+        </motion.div>
 
         {/* Work Experience */}
         <div className="mb-16">
