@@ -97,11 +97,12 @@ export default function AboutFuturistic() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-12 text-center"
         >
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
-            Currently pursuing an MSc in AI at IU Berlin and available 20 hours per week as a Werkstudent. With 3+ years of backend development experience, I am eager to contribute to a Berlin-based team while continuing my studies.
-          </p>
+          <div className="mb-12 text-center">
+            <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+              Currently pursuing an MSc in AI at IU Berlin and available 20 hours per week as a Werkstudent. With 3+ years of backend development experience, I am eager to contribute to a Berlin-based team while continuing my studies.
+            </p>
+          </div>
         </motion.div>
 
         {/* Work Experience */}
