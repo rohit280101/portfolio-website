@@ -59,7 +59,7 @@ export default function HeroFuturistic() {
             transition={{ delay: 0.5 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-300 mb-4">
-              AI/ML Engineering Student | Backend Python Developer | Available as Werkstudent
+              AI/ML Engineering Student | Backend Python Developer
             </h2>
           </motion.div>
 
