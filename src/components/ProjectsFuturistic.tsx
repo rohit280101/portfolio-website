@@ -4,6 +4,27 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
+    title: 'AI-IDP — Intelligent Document Processing',
+    description:
+      'Full-stack document intelligence platform: OCR text extraction, DistilBERT classification, and FAISS semantic search over a FastAPI backend with a React/TypeScript frontend — achieving 95% extraction accuracy and an 18% F1-score improvement over baseline. Includes JWT auth, rate limiting, Celery/Redis workers, and Prometheus/OpenTelemetry observability.',
+    link: 'https://github.com/rohit280101/AI-IDP',
+    tech: ['FastAPI', 'React/TS', 'pytesseract', 'DistilBERT', 'Sentence-Transformers', 'FAISS', 'Celery', 'Redis'],
+  },
+  {
+    title: 'End-to-End ML System',
+    description:
+      'Production-ready MLOps system covering the full lifecycle: data ingestion, feature engineering, training, evaluation, model registry, serving (FastAPI/gRPC), monitoring (Evidently, Prometheus), and auto-retraining — orchestrated with MLflow, DVC, Docker, and Kubernetes.',
+    link: 'https://github.com/rohit280101/end-to-end-ml-system',
+    tech: ['MLflow', 'FastAPI', 'gRPC', 'Docker', 'Kubernetes', 'DVC'],
+  },
+  {
+    title: 'ARIA Voice Assistant',
+    description:
+      'Hands-free voice task manager built on a 4-agent LLM pipeline (Conversation → Planner → Execution → Response), each a structured-JSON Groq LLM call. Node.js backend with WebSocket streaming, PostgreSQL task storage, Web Speech API STT/TTS, and VAD barge-in.',
+    link: 'https://github.com/rohit280101/aria-voice-assistant',
+    tech: ['Node.js', 'Groq LLM API', 'WebSockets', 'PostgreSQL', 'Web Speech API'],
+  },
+  {
     title: 'Customer Segmentation & Retention Analysis',
     description:
       'Production-grade pipeline for RFM segmentation, churn prediction (LightGBM/XGBoost + SHAP), customer lifetime value (BG/NBD + Gamma-Gamma), survival analysis, and cohort retention — with a Streamlit dashboard, MLflow tracking, and automated early-warning risk scoring.',
@@ -23,13 +44,6 @@ const projects = [
       'Production-ready NLP framework for extracting insights from unstructured text — covering sentiment analysis, topic modeling (LDA/BERTopic), NER, summarization (BART/T5), RAG-based QA, and LLM-generated narratives, with a Streamlit dashboard and MLflow tracking.',
     link: 'https://github.com/rohit280101/nlp-insights-unstructured-data',
     tech: ['Python', 'BERT', 'BERTopic', 'spaCy', 'FAISS', 'LLMs'],
-  },
-  {
-    title: 'End-to-End ML System',
-    description:
-      'Production-ready MLOps system covering the full lifecycle: data ingestion, feature engineering, training, evaluation, model registry, serving (FastAPI/gRPC), monitoring (Evidently, Prometheus), and auto-retraining — orchestrated with MLflow, DVC, Docker, and Kubernetes.',
-    link: 'https://github.com/rohit280101/end-to-end-ml-system',
-    tech: ['MLflow', 'FastAPI', 'gRPC', 'Docker', 'Kubernetes', 'DVC'],
   },
 ]
 

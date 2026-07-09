@@ -5,16 +5,16 @@ import { motion } from 'framer-motion'
 export default function AboutFuturistic() {
   const workExperience = [
     {
-      title: 'Senior Software Developer',
+      title: 'Software Engineer',
       company: 'Ocean Cognizance Pvt. Ltd.',
       location: 'Mumbai, India',
-      period: 'Jan 2024 – Dec 2024',
+      period: 'Jan 2024 – May 2025',
       highlights: [
-        'Constructed custom software solutions for 10+ clients using Python (Django, Flask, FastAPI), ORM, middleware, and JWT authentication, ensuring secure and maintainable applications.',
-        'Built RESTful API development with JSON/WebSocket, integrated PostgreSQL/MySQL databases, and enhanced performance, reducing processing time by 30%.',
-        'Developed ETL/data pipelines using Pandas, NumPy, and SQLAlchemy, optimizing batch and real-time processing for large datasets.',
-        'Applied unit testing (PyTest) and Test-Driven Development (TDD) practices, along with CI/CD pipelines (GitHub Actions), reducing post-deployment defects by 25%.',
-        'Implemented microservices architecture, Docker containers, and REST/GraphQL endpoints to deliver high-quality solutions under tight deadlines.',
+        'Built and deployed production RESTful APIs (FastAPI, Flask) with JWT authentication for real-time ML model inference, reducing response latency.',
+        'Developed end-to-end ML pipelines (preprocessing, feature engineering, training, evaluation, deployment), including NLP document processing and predictive analytics.',
+        'Designed and optimized relational database schemas (PostgreSQL, MySQL) with normalization and indexing, improving query performance by 30%.',
+        'Built microservices with Docker and CI/CD (GitHub Actions) with automated testing (PyTest), reducing post-release defects by 25%.',
+        'Architected scalable ETL/ELT data pipelines (Python, Pandas, NumPy, SQLAlchemy) and automated data ingestion for batch and real-time processing, reducing manual data handling by 60%.',
       ],
     },
     {
@@ -23,11 +23,11 @@ export default function AboutFuturistic() {
       location: 'Mumbai, India',
       period: 'Sep 2022 – Dec 2023',
       highlights: [
-        'Designed a calibrator application for control and monitoring modules, improving calibration efficiency by 40% with real-time sensor data acquisition.',
-        'Architected the UI using MFC (C++), incorporating multithreading, event-driven architecture, and custom controls for 15+ modules.',
-        'Led the project for 7 months, demonstrating the system in Ireland, enabling adoption across 3 manufacturing units.',
-        'Packaged applications with Visual Studio Installer Projects, integrating dependency management and build scripts, reducing deployment errors by 30%.',
-        'Integrated serial communication (RS232/Modbus), error handling, and data logging for reliable hardware interaction.',
+        'Developed a real-time calibration application in C++ (MFC) with event-driven architecture and multithreading across 15+ modules.',
+        'Implemented serial communication protocols (RS232/Modbus) with robust error handling for reliable hardware integration.',
+        'Led the full SDLC for a 7-month project deployed across 3 manufacturing sites in Ireland, with an automated build pipeline reducing deployment errors by 30%.',
+        'Built real-time data acquisition and logging for high-frequency industrial sensor data (C++).',
+        'Designed the data storage architecture and efficient serialization for time-series sensor data, reducing data anomalies by 40%.',
       ],
     },
     {
@@ -36,10 +36,9 @@ export default function AboutFuturistic() {
       location: 'Mumbai, India',
       period: 'Jun 2021 – Oct 2021',
       highlights: [
-        'Supported front-end development (HTML, CSS, JS), improving UI accessibility and responsiveness.',
-        'Tested and troubleshot software, resolving 15+ functional and UI issues, enhancing stability.',
-        'Facilitated API integration, database connectivity (MySQL), and Git version control, accelerating feature delivery by 20%.',
-        'Applied accessibility standards (WCAG) to create more inclusive interfaces.',
+        'Full-stack development focused on backend API integration and database connectivity (MySQL).',
+        'Implemented automated testing procedures, resolving 15+ defects and improving stability.',
+        'Optimized SQL queries and maintained code quality through reviews and Git workflows, improving feature delivery by 20%.',
       ],
     },
   ]
@@ -50,14 +49,14 @@ export default function AboutFuturistic() {
       institution: 'IU International University of Applied Sciences',
       location: 'Berlin, Germany',
       period: 'Oct 2025 – Present',
-      description: 'Selected Coursework: Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing (NLP), Computer Vision, Advanced Mathematics – emphasizing applied AI and statistical modeling.',
+      description: 'Selected Coursework: Machine Learning, Deep Learning, Natural Language Processing (NLP), Computer Vision, Advanced Neural Networks, AI System Design – emphasizing applied AI and system design.',
     },
     {
       degree: 'Bachelor of Engineering in Computer Science',
       institution: 'University of Mumbai',
       location: 'Mumbai, India',
       period: 'Jun 2018 – Aug 2022',
-      description: 'Selected Coursework: Object-Oriented Programming, Algorithms & Data Structures, Web Application Development, Statistics, Linear Algebra, Project Management – emphasizing software engineering and analytical foundations.',
+      description: 'Selected Coursework: Algorithms & Data Structures, Object-Oriented Programming, Statistics, Probability Theory, Database Management, Software Engineering, Operating Systems – emphasizing software engineering and analytical foundations.',
     },
   ]
 
@@ -100,7 +99,7 @@ export default function AboutFuturistic() {
         >
           <div className="mb-12 text-center">
             <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
-              Currently pursuing an MSc in AI at IU Berlin and available 20 hours per week as a Werkstudent. With 3+ years of backend development experience, I am eager to contribute to a Berlin-based team while continuing my studies.
+              Currently pursuing an MSc in AI at IU Berlin and available 15–20 hours per week as a Werkstudent. With 3+ years of backend development experience, I am eager to contribute to a Berlin-based team while continuing my studies.
             </p>
           </div>
         </motion.div>

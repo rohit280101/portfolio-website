@@ -71,7 +71,7 @@ export default function HeroFuturistic() {
             <div className="flex items-center justify-center mb-8">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/15 border border-cyan-400/40 text-cyan-300 text-sm font-medium">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                Available 20hrs/week · Werkstudent · Berlin
+                Available 15–20 hrs/week · Werkstudent · Berlin
               </span>
             </div>
           </motion.div>
@@ -82,7 +82,7 @@ export default function HeroFuturistic() {
             transition={{ delay: 0.6 }}
           >
             <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed mb-10">
-              Master's student in Artificial Intelligence at IU Berlin with 3+ years of backend software development experience building scalable APIs, data pipelines, and production ML systems. Proven expertise in designing robust backend architectures, implementing MLOps workflows, and delivering data-driven solutions that improved operational efficiency by 30% and reduced technical debt by 25%. Passionate about engineering reliable backend infrastructure that powers intelligent, data-first applications.
+              Master's student in Artificial Intelligence at IU Berlin with 3+ years of backend software development experience building scalable APIs, data pipelines, and production ML systems. I design robust backend architectures, implement MLOps workflows, and deliver data-driven solutions. Passionate about engineering reliable backend infrastructure that powers intelligent, data-first applications.
             </p>
           </motion.div>
 

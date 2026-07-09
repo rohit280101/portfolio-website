@@ -3,20 +3,25 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const technicalSkills = {
-  'Programming': ['Python', 'C++', 'Java', 'SQL'],
-  'Data & Analytics': ['Pandas', 'NumPy', 'ETL/ELT', 'Data Pipelines', 'Visualization', 'Data Processing'],
-  'Machine Learning': ['scikit-learn', 'TensorFlow', 'PyTorch', 'HuggingFace', 'NLP', 'TF-IDF', 'BERT', 'Model Evaluation'],
-  'Frameworks & Tools': ['Django', 'Flask', 'FastAPI', 'Git', 'Linux', 'Docker', 'CI/CD'],
+  'Programming': ['Python', 'C++', 'SQL', 'JavaScript/Node.js'],
+  'Data & Analytics': ['Pandas', 'NumPy', 'ETL/ELT', 'Data Pipelines', 'Feature Engineering', 'Batch & Stream Processing'],
+  'Machine Learning': ['scikit-learn', 'TensorFlow', 'PyTorch', 'HuggingFace Transformers', 'XGBoost', 'BERT', 'Sentence-BERT', 'FAISS', 'Embeddings', 'Semantic Search'],
+  'Frameworks & Tools': ['Django', 'Flask', 'FastAPI', 'MLflow', 'DVC', 'Git', 'Linux', 'Docker', 'CI/CD'],
   'Databases': ['MySQL', 'PostgreSQL', 'SQLite', 'SQLAlchemy'],
   'Concepts': ['Software Lifecycle', 'System Architecture', 'Process Optimization', 'Automation', 'Microservices', 'Agile', 'TDD'],
-  'Languages': ['English (Fluent)', 'German (A2)'],
+  'Languages': ['English (C1)', 'German (A2)', 'Hindi (Native)'],
 }
 
 const certifications = [
-  'AWS Certified Solutions Architect – Associate (2025)',
-  'AWS Certified Machine Learning – Specialty (In Progress)',
-  'Natural Language Processing Specialization – DeepLearning.AI',
-  'Data Analysis with R Programming – Coursera',
+  'Azure Machine Learning Fundamentals – LinkedIn Learning',
+  'MLOps Essentials for Developers and AI Engineers – LinkedIn Learning',
+  'BCG GenAI Job Simulation – Forage',
+  'Deloitte Data Analytics Job Simulation – Forage',
+  'British Airways Data Science Job Simulation – Forage',
+  'Python Pro Bootcamp – Udemy',
+  'Python Essentials – LinkedIn Learning',
+  'Data Structures and Algorithms with Python – Udemy',
+  'C++20 Masterclass – Udemy',
 ]
 
 export default function SkillsFuturistic() {
