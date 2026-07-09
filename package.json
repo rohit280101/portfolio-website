@@ -24,9 +24,7 @@
     "react": "latest",
     "react-dom": "latest",
     "tailwindcss": "^3.4.8",
-    "framer-motion": "^10.12.16",
-    "recharts": "^2.5.0",
-    "@react-three/fiber": "^9.0.0"
+    "framer-motion": "^10.12.16"
   },
   "devDependencies": {
     "@types/node": "24.10.1",

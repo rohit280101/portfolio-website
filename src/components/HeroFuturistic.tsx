@@ -89,6 +89,31 @@ export default function HeroFuturistic() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
+            transition={{ delay: 0.65 }}
+          >
+            <div className="flex flex-wrap items-stretch justify-center gap-3 md:gap-4 mb-10">
+              {[
+                { value: '3+ Yrs', label: 'Professional Experience' },
+                { value: '95%', label: 'Document Extraction Accuracy' },
+                { value: '60%', label: 'Manual Data Handling Reduced' },
+                { value: '11', label: 'Verified Projects' },
+              ].map((stat) => (
+                <div
+                  key={stat.label}
+                  className="px-5 py-3 rounded-xl bg-cyan-500/10 border border-cyan-400/30 backdrop-blur-md text-center min-w-[130px]"
+                >
+                  <div className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-300">
+                    {stat.value}
+                  </div>
+                  <div className="text-xs md:text-sm text-slate-400 mt-1">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
           >
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

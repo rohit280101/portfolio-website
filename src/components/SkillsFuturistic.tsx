@@ -18,10 +18,6 @@ const certifications = [
   'BCG GenAI Job Simulation – Forage',
   'Deloitte Data Analytics Job Simulation – Forage',
   'British Airways Data Science Job Simulation – Forage',
-  'Python Pro Bootcamp – Udemy',
-  'Python Essentials – LinkedIn Learning',
-  'Data Structures and Algorithms with Python – Udemy',
-  'C++20 Masterclass – Udemy',
 ]
 
 export default function SkillsFuturistic() {
